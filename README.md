@@ -1,4 +1,10 @@
+## Overview
+
+A lista de etapas abaixo foi criada para simplificar o processo de controle de versão de arquivos .pbix fazendo o uso do pbi-tools.
+
 ### Etapas
+
+#### Setup inicial
 1. Baixar o pbi-tools;
 1. Incluir o diretório onde a ferramenta foi extraída nas variáveis de ambiente;
 1. Executar ```pbi-tools extract <nome_do_arquivo.pbix>``` no diretório onde o .pbix está localizado;
