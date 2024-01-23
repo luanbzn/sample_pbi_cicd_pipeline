@@ -34,9 +34,9 @@
 		summarizeBy: None
 		sourceColumn: AccountID
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column AccountSeq
 		dataType: Int64
@@ -46,9 +46,9 @@
 		summarizeBy: None
 		sourceColumn: AccountSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column IndustrySeq
 		dataType: Int64
@@ -58,9 +58,9 @@
 		summarizeBy: None
 		sourceColumn: IndustrySeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column AccountOwnerSeq
 		dataType: Int64
@@ -70,9 +70,9 @@
 		summarizeBy: Sum
 		sourceColumn: AccountOwnerSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column 'Account Number'
 		dataType: String
@@ -90,9 +90,9 @@
 		summarizeBy: None
 		sourceColumn: TerritorySeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	hierarchy 'Street Hierarchy'
 		lineageTag: 24a41aca-6c8c-4ec3-9ed2-28a29d29958f

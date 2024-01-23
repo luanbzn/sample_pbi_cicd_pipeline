@@ -147,7 +147,7 @@
 			in
 			    #"Changed Type"
 
-	annotation PBI_ResultType = Table
+	changedProperty = Name
 
-	annotation PBI_ChangedProperties = ["Name"]
+	annotation PBI_ResultType = Table
 

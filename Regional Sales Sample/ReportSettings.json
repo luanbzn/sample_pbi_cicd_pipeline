@@ -2,8 +2,7 @@
   "Version": 2,
   "ReportSettings": {
     "ShowHiddenFields": true,
-    "IsQnaEnabledForLiveConnect": true,
-    "IsQnaEnabledForThisFile": true
+    "IsQnaEnabledForLiveConnect": true
   },
   "QueriesSettings": {
     "TypeDetectionEnabled": true,

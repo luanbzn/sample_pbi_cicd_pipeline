@@ -9,9 +9,9 @@
 		summarizeBy: None
 		sourceColumn: CampaignSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column 'Campaign Type'
 		dataType: String

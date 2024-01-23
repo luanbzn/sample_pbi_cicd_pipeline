@@ -25,9 +25,9 @@
 		summarizeBy: Sum
 		sourceColumn: ContactSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column AccountSeq
 		dataType: Int64
@@ -37,9 +37,9 @@
 		summarizeBy: None
 		sourceColumn: AccountSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	partition Contacts-fc28db56-6378-4de8-be05-cd265898d7ea = M
 		mode: Import

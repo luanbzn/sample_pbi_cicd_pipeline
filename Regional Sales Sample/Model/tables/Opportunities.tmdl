@@ -10,7 +10,7 @@
 		formatString = \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: 4175e2ae-8428-461a-854b-9a68cf5b5b8c
 
-		annotation PBI_ChangedProperties = ["FormatString"]
+		changedProperty = FormatString
 
 	measure 'Revenue In Pipeline' =
 			
@@ -29,7 +29,7 @@
 		formatString = \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: 1322f812-7712-498e-9f4d-ba6b80052388
 
-		annotation PBI_ChangedProperties = ["FormatString"]
+		changedProperty = FormatString
 
 	measure 'Forecast %' = (([Revenue Won]+[Revenue In Pipeline]))/ [Rev Goal]
 		formatString = #,0%;-#,0%;#,0%
@@ -102,19 +102,19 @@
 		formatString = \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: d8ffa47c-94b4-4585-9170-43b31ec2dd1d
 
-		annotation PBI_ChangedProperties = ["FormatString"]
+		changedProperty = FormatString
 
 	measure 'Revenue Won Average Deal Size' = AVERAGEX(Opportunities,[Revenue Won])
 		formatString = \$#,0;(\$#,0);\$#,0
 		lineageTag: 959e44c7-e496-4ebb-8687-668c3c16f605
 
-		annotation PBI_ChangedProperties = ["FormatString"]
+		changedProperty = FormatString
 
 	measure 'Forecast by Win/Loss Ratio' = [Revenue Open] * [Close %]
 		formatString = \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: 25b97fa8-199c-498f-9c14-f5e7d8cbb022
 
-		annotation PBI_ChangedProperties = ["FormatString"]
+		changedProperty = FormatString
 
 	column 'Purchase Process'
 		dataType: String
@@ -157,9 +157,9 @@
 		summarizeBy: Sum
 		sourceColumn: Value
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
@@ -182,9 +182,9 @@
 		summarizeBy: Average
 		isDataTypeInferred
 
-		annotation SummarizationSetBy = User
+		changedProperty = FormatString
 
-		annotation PBI_ChangedProperties = ["FormatString"]
+		annotation SummarizationSetBy = User
 
 	column DaysToClose
 		dataType: Int64
@@ -240,9 +240,11 @@
 		summarizeBy: Average
 		sourceColumn: Probability (raw)
 
-		annotation SummarizationSetBy = User
+		changedProperty = FormatString
 
-		annotation PBI_ChangedProperties = ["FormatString","IsHidden"]
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
 
 	column AccountSeq
 		dataType: Int64
@@ -252,9 +254,9 @@
 		summarizeBy: None
 		sourceColumn: AccountSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column OpportunitySeq
 		dataType: Int64
@@ -264,9 +266,9 @@
 		summarizeBy: Sum
 		sourceColumn: OpportunitySeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column ProductSeq
 		dataType: Int64
@@ -276,9 +278,9 @@
 		summarizeBy: None
 		sourceColumn: ProductSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column SystemUserSeq
 		dataType: Int64
@@ -288,9 +290,9 @@
 		summarizeBy: None
 		sourceColumn: SystemUserSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column CampaignSeq
 		dataType: Int64
@@ -300,9 +302,9 @@
 		summarizeBy: None
 		sourceColumn: CampaignSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column Blank = BLANK()
 		dataType: Int64
@@ -321,9 +323,9 @@
 		summarizeBy: Sum
 		sourceColumn: DateDiff-Days
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column 'Opportunity Created On'
 		dataType: DateTime
@@ -332,11 +334,11 @@
 		summarizeBy: None
 		sourceColumn: Opportunity Created On
 
+		changedProperty = FormatString
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
-
-		annotation PBI_ChangedProperties = ["FormatString"]
 
 	column CloseDate
 		dataType: DateTime
@@ -345,11 +347,11 @@
 		summarizeBy: None
 		sourceColumn: CloseDate
 
+		changedProperty = FormatString
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
-
-		annotation PBI_ChangedProperties = ["FormatString"]
 
 		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 

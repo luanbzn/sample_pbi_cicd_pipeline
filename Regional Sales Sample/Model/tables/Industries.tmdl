@@ -17,9 +17,9 @@
 		summarizeBy: None
 		sourceColumn: IndustrySeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	partition Industries-ad0b018f-e5af-41ce-a3f4-c734e885246e = M
 		mode: Import
@@ -32,9 +32,9 @@
 			in
 			    #"Removed Columns"
 
+	changedProperty = IsHidden
+
 	annotation PBI_QueryRelationships = {"columnCount":2,"keyColumnNames":[],"queryRelationships":[],"columnIdentities":["Section1/Industries/Changed Type.{IndustrySeq,0}","Section1/Industries/Changed Type.{Industry,1}"],"ColumnCount":2,"KeyColumnNames":[],"ColumnIdentities":["Section1/Industries/Changed Type.{IndustrySeq,0}","Section1/Industries/Changed Type.{Industry,1}"],"RelationshipInfo":[]}
 
 	annotation PBI_ResultType = Table
-
-	annotation PBI_ChangedProperties = ["IsHidden"]
 

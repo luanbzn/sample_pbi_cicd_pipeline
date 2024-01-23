@@ -33,9 +33,9 @@
 		summarizeBy: Sum
 		isDataTypeInferred
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	partition 'Opportunity Forecast Adjustment-9797fe06-d1a1-4be5-b759-4144a437eb58' = Calculated
 		mode: Import

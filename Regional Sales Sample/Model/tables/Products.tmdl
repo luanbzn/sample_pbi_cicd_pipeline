@@ -17,9 +17,9 @@
 		summarizeBy: None
 		sourceColumn: ProductSeq
 
-		annotation SummarizationSetBy = Automatic
+		changedProperty = IsHidden
 
-		annotation PBI_ChangedProperties = ["IsHidden"]
+		annotation SummarizationSetBy = Automatic
 
 	column 'Product Category'
 		dataType: String
